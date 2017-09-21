@@ -1,0 +1,94 @@
+<!--
+  Generated template for the NewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>NewPage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div padding>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="kittens" style="background: deepskyblue">
+        Kittens
+      </ion-segment-button>
+      <ion-segment-button value="puppies" style="background: deepskyblue">
+        Puppies
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'puppies'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://drscdn.500px.org/photo/228724793/q%3D80_m%3D1000/v2?webp=true&sig=3bf2dbb5a860c76a9037643e02f03ca49138ca0213d93d0cc8dbc66678ef2f7e">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://drscdn.500px.org/photo/228766087/q%3D80_m%3D1000/v2?webp=true&sig=58e57b01bc8f0bc538c3858163bce2be25bbd6c38074a031ced9127487c96f28">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://drscdn.500px.org/photo/228745413/q%3D80_m%3D1000/v2?webp=true&sig=bb4f76fb4086094352118115cabdd7bdc6bb423251a101dd94e2610d87a6401a">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://drscdn.500px.org/photo/228766087/q%3D80_m%3D1000/v2?webp=true&sig=58e57b01bc8f0bc538c3858163bce2be25bbd6c38074a031ced9127487c96f28">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'kittens'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://drscdn.500px.org/photo/228789537/q%3D80_m%3D1000/v2?webp=true&sig=182b78c513574dba9edd13e12311651aee95c3d2b9ce429e4f2f8d5f90fe72f9">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://drscdn.500px.org/photo/228724793/q%3D80_m%3D1000/v2?webp=true&sig=3bf2dbb5a860c76a9037643e02f03ca49138ca0213d93d0cc8dbc66678ef2f7e">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://drscdn.500px.org/photo/228789537/q%3D80_m%3D1000/v2?webp=true&sig=182b78c513574dba9edd13e12311651aee95c3d2b9ce429e4f2f8d5f90fe72f9">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="https://drscdn.500px.org/photo/228724793/q%3D80_m%3D1000/v2?webp=true&sig=3bf2dbb5a860c76a9037643e02f03ca49138ca0213d93d0cc8dbc66678ef2f7e">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>
+
+
