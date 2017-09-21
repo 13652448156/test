@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {IndexPage} from "../pages/index/index";
 import {NewPage} from "../pages/new/new";
+import {GamePage} from "../pages/game/game";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {NewPage} from "../pages/new/new";
     HomePage,
     TabsPage,
     IndexPage,
-    NewPage
+    NewPage,
+    GamePage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import {NewPage} from "../pages/new/new";
     HomePage,
     TabsPage,
     IndexPage,
-    NewPage
+    NewPage,
+    GamePage
   ],
   providers: [
     StatusBar,

@@ -4,6 +4,8 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+
+
 <ion-header>
 
   <ion-navbar>
@@ -15,80 +17,21 @@
 
 <ion-content padding>
 
-  <div padding>
-    <ion-segment [(ngModel)]="pet">
-      <ion-segment-button value="kittens" style="background: deepskyblue">
-        Kittens
-      </ion-segment-button>
-      <ion-segment-button value="puppies" style="background: deepskyblue">
-        Puppies
-      </ion-segment-button>
-    </ion-segment>
+  <div class="square" id="local" style="width: 100%;height: 100%">
+    <div class="game" id="local_game" style="background: skyblue;width: 40%;height: 90%;float: left;"></div>
+    <div class="next" id="local_next" style="background: peachpuff;width: 20%;height: 20%;float: left;"></div>
+    <div class="info" style="width: 20%;height: 20%;position: absolute;top: 22%;left: 41%;">
+      <div>已用时：<span id="local_time">0</span>s</div>
+      <div>已得分：<span id="local_score">0</span>分</div>
+      <div id="local_gameOver"></div>
+    </div>
   </div>
 
-  <div [ngSwitch]="pet">
-    <ion-list *ngSwitchCase="'puppies'">
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="https://drscdn.500px.org/photo/228724793/q%3D80_m%3D1000/v2?webp=true&sig=3bf2dbb5a860c76a9037643e02f03ca49138ca0213d93d0cc8dbc66678ef2f7e">
-        </ion-thumbnail>
-        <h2>Ruby</h2>
-      </ion-item>
-
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="https://drscdn.500px.org/photo/228766087/q%3D80_m%3D1000/v2?webp=true&sig=58e57b01bc8f0bc538c3858163bce2be25bbd6c38074a031ced9127487c96f28">
-        </ion-thumbnail>
-        <h2>Ruby</h2>
-      </ion-item>
-
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="https://drscdn.500px.org/photo/228745413/q%3D80_m%3D1000/v2?webp=true&sig=bb4f76fb4086094352118115cabdd7bdc6bb423251a101dd94e2610d87a6401a">
-        </ion-thumbnail>
-        <h2>Ruby</h2>
-      </ion-item>
-
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="https://drscdn.500px.org/photo/228766087/q%3D80_m%3D1000/v2?webp=true&sig=58e57b01bc8f0bc538c3858163bce2be25bbd6c38074a031ced9127487c96f28">
-        </ion-thumbnail>
-        <h2>Ruby</h2>
-      </ion-item>
-
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'kittens'">
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="https://drscdn.500px.org/photo/228789537/q%3D80_m%3D1000/v2?webp=true&sig=182b78c513574dba9edd13e12311651aee95c3d2b9ce429e4f2f8d5f90fe72f9">
-        </ion-thumbnail>
-        <h2>Luna</h2>
-      </ion-item>
-
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="https://drscdn.500px.org/photo/228724793/q%3D80_m%3D1000/v2?webp=true&sig=3bf2dbb5a860c76a9037643e02f03ca49138ca0213d93d0cc8dbc66678ef2f7e">
-        </ion-thumbnail>
-        <h2>Luna</h2>
-      </ion-item>
-
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="https://drscdn.500px.org/photo/228789537/q%3D80_m%3D1000/v2?webp=true&sig=182b78c513574dba9edd13e12311651aee95c3d2b9ce429e4f2f8d5f90fe72f9">
-        </ion-thumbnail>
-        <h2>Luna</h2>
-      </ion-item>
-
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="https://drscdn.500px.org/photo/228724793/q%3D80_m%3D1000/v2?webp=true&sig=3bf2dbb5a860c76a9037643e02f03ca49138ca0213d93d0cc8dbc66678ef2f7e">
-        </ion-thumbnail>
-        <h2>Luna</h2>
-      </ion-item>
-    </ion-list>
-  </div>
-
+  <script src="js/square.js"></script>
+  <script src="js/squareFactory.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/local.js"></script>
+  <script src="js/script.js"></script>
 </ion-content>
 
 
